@@ -1,39 +1,17 @@
-import { useState } from 'react';
-import { Tets } from '@/components/TEST/Tets';
-import './App.css';
-import reactLogo from './assets/react.svg';
-import { Footer } from './components/Footer/Footer';
+import '@/App.scss';
+import { Route, Routes } from 'react-router-dom';
+import Layout from '@/layouts/Layout';
+import { CaseOne } from '@/components/CaseOne/CaseOne';
 import { MainPage } from './components/MainPage/MainPage';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      {/* <div>
-        <a href="https://vite.dev" target="_blank" rel="noreferrer">
-          <img src="./vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count2) => count2 + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-      <MainPage />
-      <Tets />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<MainPage />} />
+        <Route path="case1" element={<CaseOne />} />
+      </Route>
+    </Routes>
   );
 }
 

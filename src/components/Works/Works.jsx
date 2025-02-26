@@ -10,12 +10,10 @@ export const Works = () => {
         <p>Partners in work, friends for life</p>
       </div>
       <div className="works__links">
-        <button>
-          <img src="" alt="" />
-        </button>
-        <button></button>
-        <button></button>
-        <button></button>
+        <button>{/* <img src="" alt="" /> */}</button>
+        <button />
+        <button />
+        <button />
       </div>
     </div>
   );
