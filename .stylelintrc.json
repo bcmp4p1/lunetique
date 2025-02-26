@@ -1,10 +1,8 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-config-recommended-scss"],
   "rules": {
-    "indentation": 2,
-    "number-leading-zero": "always",
-    "string-quotes": "double",
-    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "color-function-notation": "modern",
     "scss/dollar-variable-pattern": "^[_a-z]+[a-z0-9-]*$"
   }
 }

@@ -2,13 +2,15 @@ import { useState } from 'react';
 import { Tets } from '@/components/TEST/Tets';
 import './App.css';
 import reactLogo from './assets/react.svg';
+import { Footer } from './components/Footer/Footer';
+import { MainPage } from './components/MainPage/MainPage';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
+      {/* <div>
         <a href="https://vite.dev" target="_blank" rel="noreferrer">
           <img src="./vite.svg" className="logo" alt="Vite logo" />
         </a>
@@ -27,8 +29,10 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+      </p> */}
+      <MainPage />
       <Tets />
+      <Footer />
     </>
   );
 }
