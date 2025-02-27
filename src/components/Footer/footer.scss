@@ -1,5 +1,5 @@
 // @import url('../../styles/variables');
-@import '../../styles/variables';
+@use '../../styles/variables';
 
 .footer {
   width: 100%;
@@ -54,7 +54,7 @@
   }
   
   &__motto {
-    color: $grey;
+    color: variables.$grey;
     font-weight: 400;
     font-size: 14px;
     line-height: 19.6px;
@@ -75,9 +75,9 @@
   }
 
   &__text {
-    color: $grey;
+    color: variables.$grey;
     font-weight: 400;
-    size: 16px;
+    font-size: 16px;
     line-height: 20.75px; 
     margin: 0;
   }

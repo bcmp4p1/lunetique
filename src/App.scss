@@ -1,4 +1,4 @@
-@import './styles/variables';
+@use './styles/variables';
 
 .main {
   max-width: 648px;
@@ -11,8 +11,8 @@
   flex-direction: column;
   
   &__section {
-    font-family: $suisse, sans-serif;
-    color: $beige;
+    font-family: variables.$suisse, sans-serif;
+    color: variables.$beige;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -21,8 +21,8 @@
   }
 
   &__title {
-    color: $white-grey;
-    font-family: $zanzegi, sans-serif;
+    color: variables.$white-grey;
+    font-family: variables.$zanzegi, sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
