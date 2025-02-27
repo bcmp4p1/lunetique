@@ -6,7 +6,7 @@ export const About = () => {
 
   return (
     <div className="about">
-      <SectionTitle section="About me" title="Your design partner" />;
+      <SectionTitle section="About me" title="Your design partner" />
       <div className="about__container">
         <p className="about__me">
           <span style={{ color: 'white' }}>Hi:)</span> I&#39;m Vlad the product
