@@ -3,6 +3,9 @@
 .main {
   max-width: 648px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
 }
 
 .section {
