@@ -1,4 +1,31 @@
+@import './styles/variables';
+
 .main {
   max-width: 648px;
   margin: 0 auto;
+}
+
+.section {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  
+  &__section {
+    font-family: $suisse, sans-serif;
+    color: $beige;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: $white-grey;
+    font-family: $zanzegi, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
