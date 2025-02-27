@@ -13,6 +13,7 @@ export const Transform = () => {
         <div className="transform__shadow" />
         <div className="transform__shadow" />
         <div className="transform__shadow" />
+        <div className="transform__shadow--t" />
       </div>
       <div className="transform__container">
         <div className="transform__text">
