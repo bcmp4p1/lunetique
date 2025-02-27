@@ -8,16 +8,15 @@
   &__shadows {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    width: 100%;
+    justify-content: space-between;
     height: 100%;
     position: absolute;
+    top: 0;
     z-index: -1;
-    background: radial-gradient(50% 50% at 50% 50%, #121216 0%, rgba(18, 18, 22, 0.00) 100%);
   }
 
   &__shadow {
-    position: relative;
-    z-index: -2;
     height: 100%;
     width: 72px;
     border-radius: 8px;
