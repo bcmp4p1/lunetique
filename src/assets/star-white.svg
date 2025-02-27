@@ -1,0 +1,20 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="16" height="16" fill="#1E1E1E"/>
+<g id="Main Page" clip-path="url(#clip0_0_1)">
+<rect width="1920" height="3554" transform="translate(-872 -192)" fill="#121216"/>
+<g id="Image Stars">
+</g>
+<g id="Frame 6">
+<rect x="-11.5" y="-7.5" width="199" height="31" rx="15.5" fill="#121216"/>
+<rect x="-11.5" y="-7.5" width="199" height="31" rx="15.5" stroke="#29292F"/>
+<g id="Frame 7">
+<path id="Vector" d="M7.99999 0L9.07216 3.29897C9.64948 5.03093 10.9691 6.35052 12.701 6.92784L16 8L12.701 9.07216C10.9691 9.64948 9.64948 10.9691 9.07216 12.701L7.99999 16L6.92784 12.701C6.35052 10.9691 5.03093 9.64948 3.29897 9.07216L0 8L3.29897 6.92784C5.03093 6.35052 6.35052 5.03093 6.92784 3.29897L7.99999 0Z" fill="#E9E5E1"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="3554" fill="white" transform="translate(-872 -192)"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,85 @@
+@use '../../styles/variables';
+
+.transform {
+  height: 444px;
+  display: flex;
+
+  &__shadows {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__shadow {
+    height: 648px;
+    width: 72px;
+    border-radius: 8px;
+    border: 2px solid #1e1e24;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #121216 0%,
+      rgba(18, 18, 22, 0) 100%
+    );
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 648px;
+  }
+
+  &__text {
+  }
+
+  &__up {
+    color: #e0dedc;
+    text-align: center;
+    font-family: variables.$zanzegi;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 48px */
+    margin-bottom: 8px;
+  }
+
+  &__bottom {
+    color: #89899a;
+    text-align: center;
+    font-family: variables.$suisse;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: row;
+    padding: 6px;
+    border-radius: 200px;
+    margin-top: 24px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    box-shadow:
+      0px 0.75px 0.75px 0px rgba(255, 255, 255, 0.2) inset,
+      0px 0px 1px 0px rgba(255, 255, 255, 0.32) inset,
+      0px 2px 4px 0px rgba(244, 212, 193, 0.15),
+      5px 0px 6px -4px rgba(244, 212, 193, 0.15),
+      -5px 0px 6px -4px rgba(244, 212, 193, 0.15),
+      0px 7px 7px 0px rgba(244, 212, 193, 0.13),
+      0px 16px 10px 0px rgba(244, 212, 193, 0.08);
+  }
+
+  &__circle {
+    border-radius: 200px;
+     background-color: variables.$beige;
+    width: 236px;
+  }
+}
