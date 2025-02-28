@@ -4,6 +4,7 @@ import { CeratopsHead } from '@/components/CeratopsHead/CeratopsHead';
 import { CeratopsHighlights } from '@/components/CeratopsHighlights/CeratopsHighlights';
 import { Separator } from '@/components/Separator/Separator';
 import { CeratopsContext } from '@/components/CeratopsContext/CeratopsContext';
+import { CeratopsProblem } from '@/components/CeratopsProblem/CeratopsProblem';
 import { CeratopsSystem } from '../CeratopsSystem/CeratopsSystem';
 
 export const Ceratops = () => (
@@ -13,6 +14,7 @@ export const Ceratops = () => (
     <Separator />
     <CeratopsContext />
     <Separator />
+    <CeratopsProblem />
     <CeratopsSystem />
   </div>
 );

@@ -1,11 +1,23 @@
-// eslint-disable-next-line react/prop-types
-export const SectionTitle = ({ section, title }) => {
-  console.log(123);
+import star from '@/assets/star.svg';
 
-  return (
-    <div className="section">
-      <p className="section__section">{section}</p>
-      <p className="section__title">{title}</p>
-    </div>
-  );
-};
+// eslint-disable-next-line react/prop-types
+export const SectionTitle = ({ section, title, isStar = false }) => (
+  <div className="section">
+    <p
+      className={
+        isStar ? 'section__section section__section--big' : 'section__section'
+      }
+    >
+      {isStar && <img src={star} alt="star" className="section__star" />}
+
+      <span>{section}</span>
+    </p>
+    <p
+      className={
+        isStar ? 'section__title section__title--big' : 'section__section'
+      }
+    >
+      {title}
+    </p>
+  </div>
+);
