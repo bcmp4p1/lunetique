@@ -1,27 +1,44 @@
 import React from 'react';
 import './CeratopsContext.scss';
 import { SectionTitle } from '@/components/SectionTitle/SectionTitle';
+import { CaseImage } from '@/components/CaseImage/CaseImage';
+import case1 from '@/assets/ceratops6.png';
+import case2 from '@/assets/ceratops7.png';
 
 export const CeratopsContext = () => (
   <div className="ceratops-context">
-    <SectionTitle title="Say Goodbye to Clunky UI." section="Tray System" />
-    <p>123</p>
-    <div className="">
-      <p>A smarter way to streamline interactions.</p>
-      <div>
+    <SectionTitle
+      title="A chance to set a new standard."
+      section="CONTEXT"
+      isStar
+    />
+    <div className="ceratops-context__top">
+      <p className="ceratops-context__title">The mission was clear.</p>
+      <div className="ceratops-context__container">
         <p>
-          Our pursuit of simplicity led us to explore unique approaches to core
-          navigation — maintaining a streamlined interface that is uncluttered
-          yet powerful. After experimenting with various patterns, we arrived at
-          our dynamic tray system.
+          OOur goal was to make Ceratops accessible to novices without
+          sacrificing depth and power for power users. This was particularly
+          crucial for intricate flows like onboarding, which had many potential
+          paths and edge cases. We wanted to avoid turning critical flows into
+          daunting tasks and overwhelming the user.
         </p>
         <p>
-          One advantage of leveraging trays over full screen flows is the
-          preservation of context. Unlike full screen transitions that can
-          displace users from where they just were, trays overlay content
-          directly onto the current interface.
+          User surveys have proven invaluable, confirming a balance that truly
+          meets real needs.
         </p>
       </div>
     </div>
+    <CaseImage
+      image={case1}
+      title="Information architecture"
+      height="472"
+      number="1.0"
+    />
+    <CaseImage
+      image={case2}
+      title="Takes from the interview"
+      height="674"
+      number="1.1"
+    />
   </div>
 );
