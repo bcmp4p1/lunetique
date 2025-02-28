@@ -1,4 +1,5 @@
 import './Title.scss';
+import arrow from '@/assets/arrow right.svg';
 import star from '@/assets/star-white.svg';
 
 export const Title = () => {
@@ -23,7 +24,7 @@ export const Title = () => {
       <button className="transform__button">
         <div className="transform__circle">
           <p>Contact me</p>
-          {/* <img src={star} alt="" /> */}
+        <img src={arrow} alt="" />
         </div>
       </button>
       <div>

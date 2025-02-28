@@ -1,5 +1,29 @@
+@use '../../styles/variables';
+
 .ceratops-context {
   display: flex;
   flex-direction: column;
   gap: 80px;
+  width: 100%;
+
+  &__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+
+  &__left {
+    color: variables.$white-grey;
+    font-family: variables.$suisse;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 328px;
+  }
+
+  &__right {
+    width: 536px;
+  }
 }
