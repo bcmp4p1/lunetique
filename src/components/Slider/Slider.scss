@@ -1,0 +1,48 @@
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 648px;
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    gap: 48px;
+    flex-wrap: nowrap;
+  }
+
+  &__track {
+    display: flex;
+    width: max-content;
+    animation: scroll 4s linear infinite;
+  }
+
+  &__fade {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+
+    &--left {
+      left: 0;
+      background: linear-gradient(to right, rgba(18, 18, 22, 1) 0%, rgba(18, 18, 22, 0.9) 20%, rgba(18, 18, 22, 0.3) 40%, rgba(18, 18, 22, 0) 55%);
+    }
+
+    &--right {
+      right: 0;
+      background: linear-gradient(to left, rgba(18, 18, 22, 1) 0%, rgba(18, 18, 22, 0.9) 20%, rgba(18, 18, 22, 0.3) 40%, rgba(18, 18, 22, 0) 55%);
+    }
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    //transform: translateX(calc(-50% - 48px));
+    transform: translateX(-450px);
+  }
+}
