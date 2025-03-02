@@ -1,0 +1,38 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="28" height="28" fill="#1E1E1E"/>
+<g id="Ceratops Case" clip-path="url(#clip0_0_1)">
+<rect width="1920" height="26088" transform="translate(-1264 -9933)" fill="#121216"/>
+<g id="Frame 2121315021">
+<g id="Frame 2121315018">
+<g id="Frame 2121315017">
+<g id="Frame 2121315016">
+<g id="Background+Shadow" filter="url(#filter0_i_0_1)">
+<rect x="-24" y="-16" width="380" height="116" rx="16" fill="#17171C"/>
+<g id="energy-rectangle">
+<g id="elements">
+<path id="Vector" d="M2.91602 14.0013C2.91602 9.06662 2.91602 6.59927 4.31365 4.96286C4.51211 4.73048 4.72853 4.51407 4.9609 4.3156C6.59732 2.91797 9.06466 2.91797 13.9993 2.91797C18.934 2.91797 21.4014 2.91797 23.0378 4.3156C23.2702 4.51407 23.4866 4.73048 23.6851 4.96286C25.0827 6.59927 25.0827 9.06662 25.0827 14.0013C25.0827 18.936 25.0827 21.4033 23.6851 23.0398C23.4866 23.2721 23.2702 23.4885 23.0378 23.687C21.4014 25.0846 18.934 25.0846 13.9993 25.0846C9.06466 25.0846 6.59732 25.0846 4.9609 23.687C4.72853 23.4885 4.51211 23.2721 4.31365 23.0398C2.91602 21.4033 2.91602 18.936 2.91602 14.0013Z" stroke="#F4D4C1" stroke-width="1.75"/>
+<path id="Vector_2" d="M9.48352 13.5326L14.149 7.24451C14.5139 6.75273 15.1978 7.05882 15.1978 7.7139V12.5809C15.1978 12.9733 15.466 13.2914 15.7969 13.2914H18.0661C18.5816 13.2914 18.8564 14.0124 18.5158 14.4713L13.8503 20.7594C13.4855 21.2512 12.8015 20.9451 12.8015 20.29V15.423C12.8015 15.0306 12.5333 14.7125 12.2025 14.7125H9.93324C9.41775 14.7125 9.14297 13.9915 9.48352 13.5326Z" stroke="#F4D4C1" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_i_0_1" x="-24" y="-16" width="380" height="116" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_innerShadow_0_1"/>
+<feOffset dy="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.03 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+</filter>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="26088" fill="white" transform="translate(-1264 -9933)"/>
+</clipPath>
+</defs>
+</svg>
