@@ -4,6 +4,7 @@ import Layout from '@/layouts/Layout';
 import { CaseOne } from '@/components/CaseOne/CaseOne';
 import { Ceratops } from '@/components/Ceratops/Ceratops';
 import { MainPage } from './components/MainPage/MainPage';
+import { Sentinel } from './components/Sentinel/Sentinel';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route index element={<MainPage />} />
         <Route path="case1" element={<CaseOne />} />
         <Route path="ceratops" element={<Ceratops />} />
+        <Route path="sentinel" element={<Sentinel />} />
       </Route>
     </Routes>
   );

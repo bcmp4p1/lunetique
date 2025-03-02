@@ -16,7 +16,7 @@ export const CeratopsContext = () => (
       <p className="ceratops-context__title">The mission was clear.</p>
       <div className="ceratops-context__container">
         <p>
-          OOur goal was to make Ceratops accessible to novices without
+          Our goal was to make Ceratops accessible to novices without
           sacrificing depth and power for power users. This was particularly
           crucial for intricate flows like onboarding, which had many potential
           paths and edge cases. We wanted to avoid turning critical flows into
