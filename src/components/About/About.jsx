@@ -26,7 +26,6 @@ export const About = () => {
           the future of digital products. If you’re looking to elevate your
           product’s design, let’s connect.
         </p>
-        <p className="section__title">Your design partner</p>
       </div>
     </div>
   );

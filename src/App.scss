@@ -12,19 +12,25 @@
   display: flex;
   gap: 24px;
   flex-direction: column;
-  
+
   &__section {
-    font-family: variables.$suisse, sans-serif;
-    color: variables.$beige;
-    font-size: 12px;
+    font-family: variables.$zanzegi, sans-serif;
+    color: variables.$white-grey;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
+    font-size: 32px;
+    font-weight: 400;
+
+    span {
+      color: variables.$beige;
+      font-family: variables.$suisse;
+      font-size: 12px;
+    }
 
     &--big {
       font-size: 14px;

@@ -54,7 +54,7 @@ export const SentinelInstallation = () => (
       image={img19}
       title="Pop-up window for checking"
       height="742"
-      number="3.3"
+      number="3.4"
     />
   </div>
 );

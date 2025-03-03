@@ -21,6 +21,7 @@ export const Sentinel = () => (
     <SentinelInstallation />
     <Separator />
     <SentinelInterface />
+    <Separator />
     <SentinelNextProject />
   </div>
 );

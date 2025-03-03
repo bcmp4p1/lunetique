@@ -57,7 +57,7 @@ export const SentinelSolution = () => (
           </div>
           <div className="sentinel-solution__point">
             <div className="sentinel-solution__points">
-              <img src={h6} alt="" className="sentinel-solution__point-image" />
+              <img src={h7} alt="" className="sentinel-solution__point-image" />
               <p className="text-white">Discord Token Theft Detection</p>
             </div>
             <p className="text-grey">
@@ -68,7 +68,7 @@ export const SentinelSolution = () => (
         </div>
         <div className="sentinel-solution__point sentinel-solution__point--big">
           <div className="sentinel-solution__points">
-            <img src={h7} alt="" className="sentinel-solution__point-image" />
+            <img src={h6} alt="" className="sentinel-solution__point-image" />
             <p className="text-white">Real-Time Protection</p>
           </div>
           <p className="text-grey">
