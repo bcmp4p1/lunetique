@@ -1,0 +1,25 @@
+@use '../../styles/variables';
+
+.ceratops-context {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 32px;
+    color: variables.$white-grey;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 536px;
+    gap: 6px;
+  }
+}

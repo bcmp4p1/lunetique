@@ -1,0 +1,42 @@
+@use '../../styles/variables';
+
+.works {
+  display: flex;
+  width: 648px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+
+    :nth-child(5) {
+      img {
+        width: 29.581px;
+        height: 44px;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    padding: 8px;
+    border-radius: 18px;
+    border: 1.5px solid rgba(96, 96, 113, 0.5);
+
+    &-p3 {
+      background: #17171c;
+      width: 62px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 0 -1px rgba(255, 255, 255, 0.03) inset;
+    }
+  }
+}

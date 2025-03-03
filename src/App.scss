@@ -1,0 +1,109 @@
+@use './styles/variables';
+
+.main {
+  max-width: 648px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
+.section {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+
+  &__section {
+    font-family: variables.$zanzegi, sans-serif;
+    color: variables.$white-grey;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 400;
+
+    span {
+      color: variables.$beige;
+      font-family: variables.$suisse;
+      font-size: 12px;
+    }
+
+    &--big {
+      font-size: 14px;
+    }
+  }
+
+  &__title {
+    color: variables.$white-grey;
+    font-family: variables.$zanzegi, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &--big {
+      font-size: 48px;
+    }
+  }
+
+  &__star {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.separator {
+  height: 16px;
+  width: 100%;
+}
+
+.text-grey {
+  color: variables.$grey;
+}
+
+.text-white {
+  color: variables.$white-grey;
+}
+
+.back {
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 4px;
+  padding: 10px 24px;
+  border-radius: 200px;
+  border: 2px solid rgba(96, 96, 113, 0.50);
+  transition: all 0.3s;
+
+  @media (min-width: 1630px) {
+    position: fixed;
+  }
+
+  @media (min-width: 1750px) {
+    left: 90px
+  }
+
+  &:hover {
+    color: variables.$white-grey;
+    border-color: variables.$white-grey;
+
+    & img {
+      filter: unset;
+    }
+  }
+
+  &-arrow {
+    height: 24px;
+    width: 24px;
+    transition: all 0.3s;
+    filter: invert(46%) sepia(4%) saturate(112%) hue-rotate(180deg) brightness(92%) contrast(88%);
+  }
+}

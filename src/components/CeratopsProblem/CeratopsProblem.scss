@@ -1,0 +1,120 @@
+@use '../../styles/variables';
+
+.ceratops-problem {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 100%;
+
+  &__points {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 4px;
+    width: 100%;
+  }
+
+  &__point {
+    height: 100px;
+    width: 536px;
+    border-radius: 12px;
+    background: linear-gradient(
+      180deg,
+      rgba(30, 30, 36, 0.8) 0%,
+      rgba(28, 28, 34, 0.8) 100%
+    );
+    display: flex;
+    gap: 20px;
+    padding: 28px 24px 24px;
+    font-family: variables.$suisse;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  &__block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    padding: 48px;
+    border-radius: 40px;
+    border: 1px solid #1c1c21;
+    background: linear-gradient(180deg, #18181d 0%, #16161a 100%);
+    box-shadow: 0 2px 0px -1px rgba(255, 255, 255, 0.03) inset;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    height: 286px;
+    width: 1320px;
+    // background: linear-gradient(90deg, rgba(18, 18, 22, 0.00) 10%, #FAD3BE 50%, rgba(18, 18, 22, 0.00) 85%);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__icon {
+    height: 56px;
+    width: 56px;
+
+    &-title {
+      font-size: 14px;
+      color: variables.$beige;
+    }
+  }
+
+  &__text {
+    margin-bottom: 16px;
+    width: 90%;
+    text-align: center;
+    font-family: variables.$suisse;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+  }
+
+  &__principles {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__points2 {
+    display: flex;
+    width: 784px;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  &__point2 {
+    flex-basis: calc(50% - 12px);
+    padding: 16px 24px;
+    gap: 9px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    background: #17171c;
+    box-shadow: 0 2px 0 -1px rgba(255, 255, 255, 0.03) inset;
+  }
+
+  &__point2text {
+    display: flex;
+    gap: 12px;
+  }
+}

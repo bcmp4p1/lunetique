@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: 'https://github.com/bcmp4p1/designer-p/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),

@@ -1,0 +1,56 @@
+@use '../../styles/variables';
+
+.sentinel-problem {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 100%;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 32px;
+    color: variables.$white-grey;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: variables.$white-grey;
+    font-family: variables.$suisse;
+    font-size: 32px;
+    line-height: normal;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 536px;
+    gap: 6px;
+  }
+
+  &__point {
+    height: fit-content;
+    width: 536px;
+    border-radius: 12px;
+    align-items: start;
+    background: linear-gradient(
+      180deg,
+      rgba(30, 30, 36, 0.8) 0%,
+      rgba(28, 28, 34, 0.8) 100%
+    );
+    display: flex;
+    gap: 16px;
+    padding: 28px 24px 24px;
+    font-family: variables.$suisse;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
