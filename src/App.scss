@@ -68,3 +68,42 @@
 .text-white {
   color: variables.$white-grey;
 }
+
+.back {
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 4px;
+  padding: 10px 24px;
+  border-radius: 200px;
+  border: 2px solid rgba(96, 96, 113, 0.50);
+  transition: all 0.3s;
+
+  @media (min-width: 1630px) {
+    position: fixed;
+  }
+
+  @media (min-width: 1750px) {
+    left: 90px
+  }
+
+  &:hover {
+    color: variables.$white-grey;
+    border-color: variables.$white-grey;
+
+    & img {
+      filter: unset;
+    }
+  }
+
+  &-arrow {
+    height: 24px;
+    width: 24px;
+    transition: all 0.3s;
+    filter: invert(46%) sepia(4%) saturate(112%) hue-rotate(180deg) brightness(92%) contrast(88%);
+  }
+}

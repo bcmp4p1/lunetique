@@ -21,10 +21,15 @@ export const Title = () => (
       </p>
     </div>
     <button className="transform__button">
-      <div className="transform__circle">
+      <a
+        href="mailto:Lunetique.studio@gmail.com"
+        target="_blank"
+        className="transform__circle"
+        rel="noreferrer"
+      >
         <p>Contact me</p>
         <img src={arrow} alt="" />
-      </div>
+      </a>
     </button>
 
     <Slider />

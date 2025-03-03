@@ -12,6 +12,7 @@ export function Footer() {
       <img className="footer__dots" src={dots} alt="" />
       <div className="footer__line" />
       <div className="footer__middle">
+        <div className="footer__glow" />
         <div className="footer__logo-by">
           <img src={extendedLogo} alt="" />
           <span className="footer__motto">
@@ -19,14 +20,24 @@ export function Footer() {
           </span>
         </div>
         <div className="footer__links">
-          <div className="footer__link">
+          <a
+            href="mailto:Lunetique.studio@gmail.com"
+            target="_blank"
+            className="footer__link"
+            rel="noreferrer"
+          >
             <span className="footer__text">Contact</span>
-            <img src={arrow} alt="" />
-          </div>
-          <div className="footer__link">
+            <img src={arrow} alt="arrow" />
+          </a>
+          <a
+            href="https://linkedin.com/in/lunétique"
+            target="_blank"
+            className="footer__link"
+            rel="noreferrer"
+          >
             <span className="footer__text">LinkedIn</span>
-            <img src={arrow} alt="" />
-          </div>
+            <img src={arrow} alt="arrow" />
+          </a>
         </div>
       </div>
       <div className="footer__bottom">

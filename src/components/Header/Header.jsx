@@ -6,8 +6,6 @@ import { Link, useLocation } from 'react-router-dom';
 export const Header = () => {
   const { pathname } = useLocation();
 
-  console.log(pathname, 222);
-
   return (
     <header className="header">
       {pathname === '/' ? (

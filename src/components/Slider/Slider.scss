@@ -13,12 +13,14 @@
     display: flex;
     gap: 48px;
     flex-wrap: nowrap;
+    justify-content: flex-start;
+    transform: translateX(466px);
   }
 
   &__track {
     display: flex;
     width: max-content;
-    animation: scroll 4s linear infinite;
+    animation: scroll 5s linear infinite;
   }
 
   &__fade {
@@ -47,6 +49,6 @@
   }
   to {
     //transform: translateX(calc(-50% - 48px));
-    transform: translateX(-450px);
+    transform: translateX(-815px);
   }
 }
