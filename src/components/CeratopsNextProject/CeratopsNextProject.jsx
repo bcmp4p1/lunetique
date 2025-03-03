@@ -1,7 +1,5 @@
 import React from 'react';
-import { SectionTitle } from '@/components/SectionTitle/SectionTitle';
 import img1 from '@/assets/ceratops18.png';
-import { CaseImage } from '@/components/CaseImage/CaseImage';
 import icon from '@/assets/h15.svg';
 
 export const CeratopsNextProject = () => (
@@ -14,9 +12,9 @@ export const CeratopsNextProject = () => (
           alt="Next project"
           className="ceratops-hightlights__icon"
         />
-        <p className="ceratops-hightlights__icon-title">NEX PROJECT</p>
+        <p className="ceratops-hightlights__icon-title">NEXT PROJECT</p>
       </div>
-      <CaseImage image={img1} height="720" />
+      <img src={img1} alt="Next project" />
     </div>
   </section>
 );

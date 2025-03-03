@@ -5,6 +5,9 @@ import { SentinelHead } from '@/components/SentinelHead/SentinelHead';
 import { SentinelHighlights } from '../SentinelHighlights/SentinelHighlights';
 import { SentinelProblem } from '../SentinelProblem/SentinelProblem';
 import { SentinelSolution } from '../SentinelSolution/SentinelSolution';
+import { SentinelInstallation } from '../SentinelInstallation/SentinelInstallation';
+import { SentinelNextProject } from '../SentinelNextProject/SentinelNextProject';
+import { SentinelInterface } from '../SentinelInterface/SentinelInterface';
 
 export const Sentinel = () => (
   <div className="sentinel">
@@ -15,5 +18,9 @@ export const Sentinel = () => (
     <Separator />
     <SentinelSolution />
     <Separator />
+    <SentinelInstallation />
+    <Separator />
+    <SentinelInterface />
+    <SentinelNextProject />
   </div>
 );
