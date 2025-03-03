@@ -17,7 +17,7 @@
   &__place {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 6px;
   }
 
   &__role {
@@ -38,5 +38,6 @@
     line-height: normal;
     display: flex;
     gap: 8px;
+    margin-top: 18px;
   }
 }
