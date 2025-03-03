@@ -1,9 +1,13 @@
 .slider {
   position: relative;
   display: flex;
+  flex-direction: column;
+  gap: 24px;
   align-items: center;
   width: 648px;
   overflow: hidden;
+  font-size: 18px;
+  margin-top: 88px;
 
   &__content {
     display: flex;
