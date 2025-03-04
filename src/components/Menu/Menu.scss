@@ -1,19 +1,23 @@
 @use '../../styles/variables';
 
 .menu {
-  position: fixed;
-  top: 48px;
-  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
   flex-direction: column;
   gap: 24px;
+  display: none;
+
+  @media (min-width: 1250px) {
+    display: flex;
+  }
 
   @media (min-width: 1620px) {
-    display: flex;
+    position: fixed;
     left: calc(50% + 680px);
   }
 
   @media (min-width: 1700px) {
-    display: flex;
     left: calc(50% + 710px);
   }
 
@@ -31,10 +35,11 @@
   &__button {
     color: variables.$grey;
     font-size: 12px;
-    line-height: 12px;
+    line-height: 16px;
     cursor: pointer;
     transition: all 0.3s;
     padding-left: 20px;
+    text-align: start;
 
     &:hover {
       color: variables.$white-grey;
@@ -47,6 +52,7 @@
       &::before {
         position: absolute;
         left: 0;
+        top: 2px;
         background-image: url("../../assets/star-white.svg");
         content: "";
         width: 12px;
