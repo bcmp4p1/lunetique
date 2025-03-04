@@ -13,10 +13,37 @@
     flex-direction: row;
     gap: 55px;
 
+    & img {
+      transition: all 0.1s;
+      filter: brightness(0) saturate(100%) invert(45%) sepia(4%) saturate(300%)
+        hue-rotate(210deg);
+    }
+
+    :nth-child(1) {
+      img {
+        width: 51px;
+        height: 28px;
+      }
+    }
+
+    :nth-child(3) {
+      img {
+        width: 25px;
+        height: 32px;
+      }
+    }
+
     :nth-child(5) {
       img {
-        width: 29.581px;
+        width: 30px;
         height: 44px;
+      }
+    }
+
+    :nth-child(7) {
+      img {
+        width: 32px;
+        height: 32px;
       }
     }
   }
@@ -28,6 +55,15 @@
     padding: 8px;
     border-radius: 18px;
     border: 1.5px solid rgba(96, 96, 113, 0.5);
+
+    &:hover {
+      border: 2.5px solid rgba(244, 212, 193, 0.24);
+      
+      & img {
+        filter: brightness(0) saturate(100%) invert(94%) sepia(18%)
+          saturate(345%) hue-rotate(333deg);
+      }
+    }
 
     &-p3 {
       background: #17171c;
