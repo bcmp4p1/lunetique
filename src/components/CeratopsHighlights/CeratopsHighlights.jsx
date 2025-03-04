@@ -8,7 +8,7 @@ import imageFour from '@/assets/ceratops5.png';
 import { CaseImage } from '@/components/CaseImage/CaseImage';
 
 export const CeratopsHighlights = () => (
-  <section className="ceratops-hightlights">
+  <section className="ceratops-hightlights" id="highlights">
     <div className="ceratops-hightlights__background" />
     <div className="ceratops-hightlights__container">
       <div className="ceratops-hightlights__top">

@@ -3,7 +3,7 @@ import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
 import ScrollToTop from '@/components/ScrollToTop/ScrollToTop';
 import { Back } from '@/components/Back/Back';
-// import { Menu } from '@/components/Menu/Menu';
+import { Menu } from '@/components/Menu/Menu';
 
 const Layout = () => {
   const { pathname } = useLocation();
@@ -13,7 +13,7 @@ const Layout = () => {
       {pathname !== '/' && (
         <>
           <Back />
-          {/* <Menu /> */}
+          <Menu />
         </>
       )}
       <ScrollToTop />

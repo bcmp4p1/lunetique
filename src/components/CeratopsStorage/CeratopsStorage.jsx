@@ -6,7 +6,7 @@ import img2 from '@/assets/ceratops16.png';
 import { CaseImage } from '@/components/CaseImage/CaseImage';
 
 export const CeratopsStorage = () => (
-  <div className="ceratops-storage">
+  <div className="ceratops-storage" id="secure-key-storage">
     <SectionTitle
       title="Next-Level Security."
       section="Secure Key Storage"

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
+import './Menu.scss';
+import { useLocation } from 'react-router-dom';
 
-const sections = [
-  { id: 'overview', label: 'Overview' },
+const sectionsCeratops = [
   { id: 'highlights', label: 'Highlights' },
   { id: 'context', label: 'Context' },
   { id: 'problem', label: 'The problem' },
@@ -13,14 +14,30 @@ const sections = [
   { id: 'retrospective', label: 'Retrospective' },
 ];
 
+const sectionsSentinel = [
+  { id: 's-highlights', label: 'Highlights' },
+  { id: 's-problem', label: 'The problem' },
+  { id: 's-solution', label: 'Solution' },
+  { id: 's-installation', label: 'Installation' },
+  { id: 's-interface', label: 'Interface' },
+];
+
 export const Menu = () => {
   const [activeSection, setActiveSection] = useState('');
+  const [sections, setSections] = useState(sectionsCeratops);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    setSections(
+      pathname.includes('ceratops') ? sectionsCeratops : sectionsSentinel,
+    );
+  }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
       let currentSection = '';
 
-      sections.forEach(({ id }) => {
+      [...sectionsCeratops, ...sectionsSentinel].forEach(({ id }) => {
         const section = document.getElementById(id);
         if (section) {
           const { top } = section.getBoundingClientRect();
@@ -34,7 +51,9 @@ export const Menu = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const scrollToSection = (id) => {
@@ -49,11 +68,20 @@ export const Menu = () => {
 
   return (
     <nav className="menu">
-      <h3>CONTENTS</h3>
-      <ul>
+      <h3 className="menu__head">CONTENTS</h3>
+      <ul className="menu__list">
         {sections.map(({ id, label }) => (
-          <li key={id} className={activeSection === id ? 'active' : ''}>
-            <button onClick={() => scrollToSection(id)}>{label}</button>
+          <li key={id} className="menu__item">
+            <button
+              onClick={() => scrollToSection(id)}
+              className={
+                activeSection === id
+                  ? 'menu__button menu__button--active'
+                  : 'menu__button'
+              }
+            >
+              {label}
+            </button>
           </li>
         ))}
       </ul>

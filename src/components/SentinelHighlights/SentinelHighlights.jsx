@@ -10,7 +10,7 @@ import img8 from '@/assets/sentinel8.png';
 import { CaseImage } from '@/components/CaseImage/CaseImage';
 
 export const SentinelHighlights = () => (
-  <section className="sentinel-hightlights">
+  <section className="sentinel-hightlights" id="s-highlights">
     <div className="sentinel-hightlights__background" />
     <div className="sentinel-hightlights__container">
       <div className="sentinel-hightlights__top">

@@ -6,7 +6,7 @@ import img2 from '@/assets/ceratops12.png';
 import { CaseImage } from '@/components/CaseImage/CaseImage';
 
 export const CeratopsSystem = () => (
-  <div className="ceratops-system">
+  <div className="ceratops-system" id="tray-system">
     <SectionTitle
       title="Say Goodbye to Clunky UI."
       section="Tray System"

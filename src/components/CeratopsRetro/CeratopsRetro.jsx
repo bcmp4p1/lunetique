@@ -6,10 +6,9 @@ import icon from '@/assets/h11.svg';
 import h2 from '@/assets/h12.svg';
 import h3 from '@/assets/h13.svg';
 import h4 from '@/assets/h14.svg';
-import { CaseImage } from '@/components/CaseImage/CaseImage';
 
 export const CeratopsRetro = () => (
-  <div className="ceratops-retro">
+  <div className="ceratops-retro" id="retrospective">
     <SectionTitle
       title="More Than Just an Interface."
       section="Retrospective"

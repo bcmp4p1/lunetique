@@ -1,0 +1,61 @@
+@use '../../styles/variables';
+
+.menu {
+  position: fixed;
+  top: 48px;
+  display: none;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: 1620px) {
+    display: flex;
+    left: calc(50% + 680px);
+  }
+
+  @media (min-width: 1700px) {
+    display: flex;
+    left: calc(50% + 710px);
+  }
+
+  &__head {
+    font-size: 12px;
+    color: variables.$beige;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__button {
+    color: variables.$grey;
+    font-size: 12px;
+    line-height: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding-left: 20px;
+
+    &:hover {
+      color: variables.$white-grey;
+    }
+
+    &--active {
+      position: relative;
+      color: variables.$white-grey;
+
+      &::before {
+        position: absolute;
+        left: 0;
+        background-image: url("../../assets/star-white.svg");
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: #d4af7a;
+      }
+    }
+  }
+}
