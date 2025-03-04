@@ -12,7 +12,9 @@ export function Footer() {
       <img className="footer__dots" src={dots} alt="" />
       <div className="footer__line" />
       <div className="footer__middle">
-        <div className="footer__glow" />
+        <div className="footer__glow-container">
+          <div className="footer__glow" />
+        </div>
         <div className="footer__logo-by">
           <img src={extendedLogo} alt="" />
           <span className="footer__motto">

@@ -15,7 +15,13 @@
     width: 40px;
   }
 
-  &__containre {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  &__box {
     display: flex;
     flex-direction: column;
   }
@@ -67,6 +73,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    &-container {
+      position: absolute;
+      width: 100%;
+      height: 850px;
+      top: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
   }
 
 
@@ -75,7 +90,7 @@
     width: 1px;
     height: 100%;
     top: 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.027);
     overflow: hidden;
 
     &::after {
@@ -86,7 +101,7 @@
       width: 3px;
       top: -50%;
       left: 0;
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+      background: linear-gradient(to bottom, rgba(244, 212, 193, 0) 0%, #F4D4C1 75%, #F4D4C1 100%);
       animation: drop 7s 0s infinite;
       animation-fill-mode: forwards;
       animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
