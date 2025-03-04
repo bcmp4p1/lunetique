@@ -5,7 +5,7 @@ import img20 from '@/assets/sentinel20.png';
 import { CaseImage } from '@/components/CaseImage/CaseImage';
 
 export const SentinelInterface = () => (
-  <div className="sentinel-interface">
+  <div className="sentinel-interface" id="s-interface">
     <SectionTitle title="One Click to Stay Safe" section="Interface" isStar />
     <div className="sentinel-interface__top">
       <p className="sentinel-interface__title">Easy management of settings.</p>
@@ -17,9 +17,9 @@ export const SentinelInterface = () => (
           selected task.{' '}
         </p>
         <p>
-          We've also added a Report Scam feature that makes it easy to file a
-          complaint about a fraudulent site. You just need to paste the link
-          into the report field and we'll take care of the rest.
+          We&#39;ve also added a Report Scam feature that makes it easy to file
+          a complaint about a fraudulent site. You just need to paste the link
+          into the report field and we&#39;ll take care of the rest.
         </p>
       </div>
     </div>
