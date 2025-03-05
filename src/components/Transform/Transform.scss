@@ -29,10 +29,16 @@
       position: absolute;
       background: radial-gradient(
         circle,
-        rgba(18, 18, 22, 0) 0%,
-        rgba(18, 18, 22, 0.9) 70%,
+        rgba(18, 18, 22, 0.1) 0%,
+        rgba(18, 18, 22, 0.9) 50%,
         #121216 100%
       );
+      image-rendering: optimizeQuality;
+      //filter: blur(20px);
+      //background-blend-mode: soft-light;
+      //background: #121216;
+      //mask-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+      //-webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
     }
   }
 
