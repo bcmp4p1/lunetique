@@ -20,28 +20,28 @@
     }
 
     :nth-child(1) {
-      img {
+      .works__link-p3-icon {
         width: 51px;
         height: 28px;
       }
     }
 
     :nth-child(3) {
-      img {
+      .works__link-p3-icon {
         width: 25px;
         height: 32px;
       }
     }
 
     :nth-child(5) {
-      img {
+      .works__link-p3-icon {
         width: 30px;
         height: 44px;
       }
     }
 
     :nth-child(7) {
-      img {
+      .works__link-p3-icon {
         width: 32px;
         height: 32px;
       }
@@ -78,6 +78,7 @@
         font-family: variables.$zanzegi;
         font-size: 22px;
         line-height: normal;
+        margin-top: 5px;
       }
 
       span {
@@ -95,9 +96,11 @@
     border-radius: 18px;
     border: 1.5px solid rgba(96, 96, 113, 0.5);
     position: relative;
+    transition: all 0.3s;
 
     &:hover {
       border: 2.5px solid rgba(244, 212, 193, 0.24);
+      padding: 0;
 
       & img {
         filter: brightness(0) saturate(100%) invert(94%) sepia(18%)
@@ -110,16 +113,53 @@
         visibility: visible;
         transform: translateY(0);
       }
+
+      .works__link-p3 {
+        border-radius: 18px;
+        transform-origin: center;
+      }
+
+      .works__link-p3-icon {
+        transform: translateY(-10px);
+      }
+
+      .works__link-p3-arrow {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
     }
 
     &-p3 {
       background: #17171c;
-      width: 62px;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       border-radius: 10px;
       box-shadow: 0 2px 0 -1px rgba(255, 255, 255, 0.03) inset;
+      position: relative;
+
+      /* stylelint-disable-next-line no-descending-specificity */
+      &-icon {
+        position: absolute;
+       
+      }
+
+      /* stylelint-disable-next-line no-descending-specificity */
+      &-arrow {
+        width: 20px;
+        height: 18px;
+        position: absolute;
+        bottom: 5px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition:
+          opacity 0.3s ease,
+          transform 0.3s ease;
+      }
     }
   }
 }

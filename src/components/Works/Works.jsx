@@ -3,6 +3,7 @@ import p1 from '@/assets/p1.svg';
 import p2 from '@/assets/p2.svg';
 import p3 from '@/assets/p3.svg';
 import p4 from '@/assets/p4.svg';
+import arrow from '@/assets/hover-arrow.svg';
 import vector from '@/assets/vector.svg';
 import { Link } from 'react-router-dom';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
@@ -20,7 +21,8 @@ export const Works = () => (
           <span>Mobile App</span>
         </div>
         <div className="works__link-p3">
-          <img src={p1} alt="" />
+          <img className="works__link-p3-icon" src={p1} alt="" />
+          <img className="works__link-p3-arrow" src={arrow} alt="" />
         </div>
       </Link>
       <img src={vector} alt="" />
@@ -30,7 +32,8 @@ export const Works = () => (
           <span>Chrome extension & Web Design</span>
         </div>
         <div className="works__link-p3">
-          <img src={p2} alt="" />
+          <img className="works__link-p3-icon" src={p2} alt="" />
+          <img className="works__link-p3-arrow" src={arrow} alt="" />
         </div>
       </Link>
       <img src={vector} alt="" />
@@ -39,7 +42,8 @@ export const Works = () => (
           <p>Coming Soon</p>
         </div>
         <div className="works__link-p3">
-          <img src={p3} alt="" />
+          <img className="works__link-p3-icon" src={p3} alt="" />
+          <img className="works__link-p3-arrow" src={arrow} alt="" />
         </div>
       </button>
       <img src={vector} alt="" />
@@ -48,7 +52,8 @@ export const Works = () => (
           <p>Coming Soon</p>
         </div>
         <div className="works__link-p3">
-          <img src={p4} alt="" />
+          <img className="works__link-p3-icon" src={p4} alt="" />
+          <img className="works__link-p3-arrow" src={arrow} alt="" />
         </div>
       </button>
     </div>
