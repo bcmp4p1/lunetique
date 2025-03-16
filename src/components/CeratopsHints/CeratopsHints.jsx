@@ -8,7 +8,7 @@ import img2 from '@/assets/ceratops10.png';
 import { CaseImage } from '@/components/CaseImage/CaseImage';
 
 export const CeratopsHints = () => (
-  <div className="ceratops-hints">
+  <div className="ceratops-hints" id="smart-hints">
     <SectionTitle
       title="Guiding New Users Without Interrupting Experts."
       section="Smart Hints"
@@ -19,7 +19,7 @@ export const CeratopsHints = () => (
         Perfect Guidance at the Right Moment.
       </p>
       <p className="ceratops-hints__right">
-        We introduced Smart Hints to help new users navigate complex wallet
+        We introduced Smart Hints to help new users navigate complex wallet
         functions with ease. These subtle, context-aware tips provide just the
         right guidance when needed—without disrupting the experience for
         seasoned users.

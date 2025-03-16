@@ -14,7 +14,7 @@ import icon from '@/assets/challenge.svg';
 import { CaseImage } from '@/components/CaseImage/CaseImage';
 
 export const CeratopsProblem = () => (
-  <div className="ceratops-problem">
+  <div className="ceratops-problem" id="problem">
     <SectionTitle
       title="The Hidden Problems No One Talks About."
       section="The Problem"

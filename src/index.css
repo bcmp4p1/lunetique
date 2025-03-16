@@ -40,14 +40,28 @@ a {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   background-color: #121216;
+  min-width: 1320px;
+  transform-origin: top left;
+  /*max-width: 100vw;*/
+  /*overflow-x: hidden;*/
   /* display: flex; */
   /* place-items: center;
   min-width: 320px;
   min-height: 100vh;
   background: rgb(68, 66, 66); */
 }
+
+/*@media (max-width: 1320px) {*/
+/*  html {*/
+/*    --scale: calc(100 / 1320 * 100vw); !* Вычисляем процент масштаба *!*/
+/*  }*/
+
+/*  body {*/
+/*    transform: scale(calc(var(--scale) / 100)); !* Корректный scale() *!*/
+/*  }*/
+/*}*/
 
 h1 {
   font-size: 3.2em;

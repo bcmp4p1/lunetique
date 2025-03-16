@@ -6,7 +6,7 @@ import case1 from '@/assets/ceratops6.png';
 import case2 from '@/assets/ceratops7.png';
 
 export const CeratopsContext = () => (
-  <div className="ceratops-context">
+  <div className="ceratops-context" id="context">
     <SectionTitle
       title="A chance to set a new standard."
       section="CONTEXT"

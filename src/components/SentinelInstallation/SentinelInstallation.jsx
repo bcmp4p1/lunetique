@@ -9,7 +9,7 @@ import img19 from '@/assets/sentinel19.png';
 import { CaseImage } from '@/components/CaseImage/CaseImage';
 
 export const SentinelInstallation = () => (
-  <div className="sentinel-installation">
+  <div className="sentinel-installation" id="s-installation">
     <SectionTitle
       title="Install in 30 Seconds and Forget About Scams!"
       section="Installation"
@@ -20,9 +20,9 @@ export const SentinelInstallation = () => (
         Fast Installation – Instant Protection.
       </p>
       <div className="sentinel-installation__text">
-        Users shouldn't waste time on complicated setups. We've designed the
-        installation process to take no more than 30 seconds. One click – and
-        your browser is protected from phishing attacks, fake websites, and
+        Users shouldn&#39;t waste time on complicated setups. We&#39;ve designed
+        the installation process to take no more than 30 seconds. One click –
+        and your browser is protected from phishing attacks, fake websites, and
         token theft.
       </div>
     </div>

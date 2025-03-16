@@ -6,7 +6,7 @@ import img2 from '@/assets/ceratops14.png';
 import { CaseImage } from '@/components/CaseImage/CaseImage';
 
 export const CeratopsSpeed = () => (
-  <div className="ceratops-speed">
+  <div className="ceratops-speed" id="transaction-speed">
     <SectionTitle
       title="Take Control of Your Transactions."
       section="Transaction Speed"

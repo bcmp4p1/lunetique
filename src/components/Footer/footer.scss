@@ -4,8 +4,9 @@
 .footer {
   width: 100%;
   position: relative;
-  padding: 47px 0 24px;
-  margin-top: 350px;
+  padding: 47px 15px 24px;
+  max-width: 1320px;
+  margin: 350px auto 0;
 
   &__logo {
     position: absolute;
@@ -87,6 +88,17 @@
       );
       pointer-events: none;
       opacity: 0.3;
+    }
+
+    &-container {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+      width: 100vw;
+      height: 220px;
+      overflow: hidden;
     }
   }
 

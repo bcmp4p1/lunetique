@@ -29,6 +29,7 @@
       color: variables.$beige;
       font-family: variables.$suisse;
       font-size: 12px;
+      text-transform: uppercase;
     }
 
     &--big {
@@ -70,6 +71,7 @@
 
 .back {
   position: absolute;
+  z-index: 3;
   left: 40px;
   top: 60px;
   display: flex;
@@ -82,12 +84,14 @@
   border: 2px solid rgba(96, 96, 113, 0.50);
   transition: all 0.3s;
 
-  @media (min-width: 1630px) {
+  @media (min-width: 1620px) {
     position: fixed;
+    left: unset;
+    right: calc(50% + 680px);
   }
 
-  @media (min-width: 1750px) {
-    left: 90px
+  @media (min-width: 1700px) {
+    right: calc(50% + 710px);
   }
 
   &:hover {

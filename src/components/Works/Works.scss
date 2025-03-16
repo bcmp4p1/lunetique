@@ -14,7 +14,7 @@
     gap: 55px;
 
     & img {
-      transition: all 0.3s;
+      transition: all 0.1s;
       filter: brightness(0) saturate(100%) invert(45%) sepia(4%) saturate(300%)
         hue-rotate(210deg);
     }

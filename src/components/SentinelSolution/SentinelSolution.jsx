@@ -11,7 +11,7 @@ import img14 from '@/assets/sentinel14.png';
 import { CaseImage } from '@/components/CaseImage/CaseImage';
 
 export const SentinelSolution = () => (
-  <div className="sentinel-solution">
+  <div className="sentinel-solution" id="s-solution">
     <SectionTitle
       title="Signing a transaction? Find out what's really going on!"
       section="Solution"
