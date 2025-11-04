@@ -25,13 +25,13 @@ export const Header = () => {
         </div>
       )}
 
-      <Link to="/" className="header__container">
+      {/* <Link to="/" className="header__container">
         <img className="header__logo" src={logo} alt="logo" />
         <div className="header__box">
           <p className="header__title">Lunétique</p>
           <p className="header__author">by Vlad Mozharovsky</p>
         </div>
-      </Link>
+      </Link> */}
     </header>
   );
 };

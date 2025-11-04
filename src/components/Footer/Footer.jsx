@@ -17,7 +17,7 @@ export function Footer() {
           <div className="footer__glow" />
         </div>
         <Link to="/" className="footer__logo-by">
-          <img src={extendedLogo} alt="" />
+          {/* <img src={extendedLogo} alt="" /> */}
           <span className="footer__motto">
             “Dreams are born under the moon...”
           </span>
